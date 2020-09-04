@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import Header from './components/Header';
+
+import GlobalStyle from "./style/Globastyle"
+
+import Input from './components/Input';
+
+import AdressData from "./components/AdressData"
 
 function App() {
+
+  const [ip, setIp] = useState("")
+
+  function SearchIp() {
+    console.log(ip);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+
+      <Header>
+        <Input ipState={[ip, setIp]} search={SearchIp} />
+        <AdressData />
+      </Header>
+
+
+    </>
   );
 }
 
