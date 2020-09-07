@@ -8,6 +8,8 @@ import Input from './components/Input';
 
 import AdressData from "./components/AdressData"
 
+import Map from "./components/Map";
+
 function App() {
 
   const [ip, setIp] = useState("")
@@ -24,6 +26,9 @@ function App() {
         <Input ipState={[ip, setIp]} search={SearchIp} />
         <AdressData />
       </Header>
+      <Map/>
+
+
 
 
     </>
