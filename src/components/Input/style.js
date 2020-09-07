@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InputBox = styled.div`
 
     width: 87%;
-    max-width:350px;
+    max-width:450px;
     height:45px;
 
     input{
