@@ -30,6 +30,15 @@ const GlobalStyle = createGlobalStyle`
     body{
         height:100vh;
         width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    .leaflet-container{
+        width:100%;
+        height:100%;
+        /* z-index:-1; */
     }
 
 `;
