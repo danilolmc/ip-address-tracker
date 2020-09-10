@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     .leaflet-container{
         width:100%;
         height:100%;
+        transition:1s;
         /* z-index:-1; */
     }
 
