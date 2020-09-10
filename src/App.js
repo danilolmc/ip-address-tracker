@@ -10,26 +10,43 @@ import AdressData from "./components/AdressData"
 
 import Map from "./components/Map";
 
+import getData from "./services/axios";
+
 function App() {
 
   const [ip, setIp] = useState("")
+  const [result, setResult] = useState("")
 
-  function SearchIp() {
-    console.log(ip);
+
+  const fetchData = async (ipNumber) => {
+      
+    const search = await getData(ipNumber);
+    
+    if(search.status === 200){
+
+      setResult(search.data);
+    }
+
   }
+
+  useEffect(() => {
+   
+    
+    fetchData();
+
+  }, [])
+
+
 
   return (
     <>
       <GlobalStyle />
 
       <Header>
-        <Input ipState={[ip, setIp]} search={SearchIp} />
-        <AdressData />
+        <Input ipState={[ip, setIp]} search={fetchData} />
+        <AdressData data={result} />
       </Header>
-      <Map/>
-
-
-
+      <Map lat={result.lat || -50} lon={result.lon || 10}/>
 
     </>
   );
