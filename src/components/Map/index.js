@@ -2,16 +2,31 @@ import React from 'react';
 
 import { MyMap } from "./style";
 
-import { Map as MapContent, TileLayer } from "react-leaflet";
+import { Map as MapContent, TileLayer, Marker, Popup } from "react-leaflet";
 
-export default function Map() {
+import L from "leaflet";
+
+import iconLc from "../../assets/images/icon_location.png";
+
+export default function Map({lat,lon}) {
+
+
+    const iconLocation = new L.Icon({
+        iconUrl: iconLc,
+        iconSize: new L.Point(60, 60),
+        className: 'leaflet-icon-location'
+    });
+
     return (
         <MyMap>
-            <MapContent center={[-23.5378072,-46.6432592]} zoom={50}>
+            <MapContent center={[lat, lon]} zoom={17}>
                 <TileLayer
-                    attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+                    attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+                    url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
                 />
+
+
+                <Marker position={[lat, lon]} icon={iconLocation}/>
             </MapContent>
         </MyMap>
     )
