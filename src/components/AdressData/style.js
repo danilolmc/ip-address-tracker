@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const Loading = styled.aside`
+
+    color:#CCC;
+    border:3px solid ;
+    border-color: #eee #eee #eee transparent;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+
+`;
+
 export const Adress = styled.div`
 
     width: 86%;
@@ -9,8 +20,8 @@ export const Adress = styled.div`
     margin-top: 2rem;
     display:flex;
     flex-direction:column;
-    box-shadow: 10px 70px 40px -20px #000;
-    z-index:500;
+    box-shadow: 10px 70px 40px -20px rgba(0,0,0,.2);
+    z-index:1001;
     padding:25px 0;
     /* border:1px solid; */
 
@@ -29,12 +40,21 @@ export const Adress = styled.div`
             letter-spacing:1px;
         }
     
-        > p:last-child{
+        > div{
             font-size:1.3em;
             font-weight:500;
             margin:5px 0;
             color:var(--very-dark-gray);
 
+        }
+
+        #loading{
+            margin:10px auto 5px auto ;
+            animation: load 1s linear infinite;
+        }
+
+        @keyframes load{
+            to{transform:rotate(360deg)}
         }
 
     }
@@ -43,10 +63,11 @@ export const Adress = styled.div`
     {
         flex-direction:row;
         margin-top: 3.2rem;
+        min-height:152px;
         padding:35px 15px 15px 15px;
-        box-shadow: 0px 40px 40px -15px #aaa;
+        box-shadow: 0px 20px 40px -15px rgba(0,0,0,.2);
 
-        span{
+        > span{
             text-align:left;
             height:auto;
             width:auto;
@@ -55,12 +76,21 @@ export const Adress = styled.div`
                 font-size:.6rem;
             }
             
-            > p:last-of-type{
+            > div{
                 font-size:1.7rem;
                 margin-top:10px;
                 word-wrap:break-word;
-                max-width:150px;
+                max-width:160px;
+                width:auto;
+                max-height:70%;
+                overflow:hidden;
+                text-overflow:ellipsis;
             }
+
+            #loading{
+            margin:30px auto 5px auto ;
+            animation: load 1s linear infinite;
+             }
 
             :nth-child(n+2)::before{
                 content:"";
