@@ -14,7 +14,7 @@ export default function Input({ipState,search}) {
 
         <InputBox>
             <input type="text" value={ip} onChange={handleChange} placeholder="Procure por qualquer endereço IP" />
-            <button onClick={search}>></button>
+            <button onClick={()=> search(ip)}>></button>
         </InputBox>
 
     )

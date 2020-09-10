@@ -13,6 +13,10 @@ export const InputBox = styled.div`
         border-bottom-left-radius:12px;
         padding: 0 18px;
         color: var(--very-dark-gray);
+    
+       ::placeholder{
+            color:#ccc;
+        }
     }
 
     button{
@@ -24,5 +28,10 @@ export const InputBox = styled.div`
         color: #fff;
 
         font-weight:700;
+        transition:.4s;
+
+        :hover{
+            background: #333;
+        }
     }
 `;
