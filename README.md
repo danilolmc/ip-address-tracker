@@ -67,6 +67,6 @@ Fique a vontade para avaliar o repositório dando uma "star" ou contribuir com o
 - Instalação do [Node.js](https://nodejs.org/en/download/) 
 
 ## Licença
-- [MIT](LICENCE.md)
+- [MIT](LICENSE)
 
 
