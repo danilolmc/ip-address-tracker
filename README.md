@@ -5,7 +5,7 @@
 
 &nbsp;
 
-![](../ip-adress-tracker/src/assets/images/site.png)
+![](src/assets/images/site.png)
 
 
 Este é um projeto baseado em um desafio da plataforma Front end Mentor, o desafio original consiste em criar uma aplicação de rastreamento de IP com JavaScript puro consumindo uma API e usando uma biblioteca para gerar mapas, porém resolvi criar em ReactJS para praticar mais.
