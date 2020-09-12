@@ -1,4 +1,20 @@
-# IP Adress Tracker
+<h1 align="center"> IP Adress Tracker</h1>
+
+
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=6C4FBB&labelColor=535353" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=6C4FBB&labelColor=535353">
+
+  <img alt="languages" src="https://img.shields.io/github/languages/count/DaniloLima122/Proffy?color=%236C4FBB">
+
+  <img alt="size" src="https://img.shields.io/github/repo-size/DaniloLima122/Proffy?color=6C4FBB">
+
+</p>
+
+
+&nbsp;
+
 
 ### Aplicação de rastreamento de localização através do IP
 
