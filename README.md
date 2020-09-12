@@ -1,4 +1,4 @@
-<h1 align="center"> IP Adress Tracker</h1>
+<h1 align="center"> IP Address Tracker</h1>
 
 
 <p align="center">
