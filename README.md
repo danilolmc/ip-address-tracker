@@ -2,13 +2,13 @@
 
 
 <p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=6C4FBB&labelColor=535353" alt="PRs welcome!" />
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=5468CE&labelColor=535353" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=6C4FBB&labelColor=535353">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=5468CE&labelColor=535353">
 
-  <img alt="languages" src="https://img.shields.io/github/languages/count/DaniloLima122/Proffy?color=%236C4FBB">
+  <img alt="languages" src="https://img.shields.io/github/languages/count/DaniloLima122/ip-adress-tracker?color=5468CE">
 
-  <img alt="size" src="https://img.shields.io/github/repo-size/DaniloLima122/Proffy?color=6C4FBB">
+  <img alt="size" src="https://img.shields.io/github/repo-size/DaniloLima122/ip-adress-tracker?color=5468CE">
 
 </p>
 
